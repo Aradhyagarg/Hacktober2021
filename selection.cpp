@@ -10,7 +10,7 @@ void swap(int *x, int *y)
  
 void selectionSort(int arr[], int n)
 {
-   int min_index;
+   int min_index; //variable declaration
   
    for (int i = 0; i < n-1; i++)
    {
@@ -31,18 +31,18 @@ void printArray(int arr[], int n)
    cout << "\n";
 }
  
-int main()
+int main(void)
 {
-   int arr[] = {64, 25, 12, 22, 11};
+   int arr[] = {64, 25, 12, 22, 11}; //array is collection of similar kind of elements.
    int n = sizeof(arr)/sizeof(arr[0]);
   
    cout << "Given Array: ";
-   printArray(arr, n);
+   printArray(arr, n); //function calling
   
-   selectionSort(arr, n);
+   selectionSort(arr, n); //function calling
   
    cout << "Sorted Array: ";
-   printArray(arr, n);
+   printArray(arr, n); //function calling
   
    return 0;
 }
